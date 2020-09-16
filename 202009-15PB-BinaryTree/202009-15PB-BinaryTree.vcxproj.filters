@@ -21,9 +21,15 @@
     <ClCompile Include="SearchTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CTbstree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SearchTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CTbstree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -140,6 +140,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="202009-15PB-BinaryTree.cpp" />
+    <ClCompile Include="SearchTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SearchTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,19 +13,19 @@ SearchTree::~SearchTree()
 
 #pragma region 对内函数
 // 内部插入函数
-void SearchTree::insert(PNODE& node, int data)
+void SearchTree::insert(PNODE& node, int data, PNODE& parent)
 {
 	if (node == nullptr) {
-		node = (PNODE)new NODE{ data,nullptr,nullptr };
+		node = (PNODE)new NODE{ data,nullptr,nullptr,parent };
 		if (!node) return;
 	}
 	else if (data < node->data)
 	{
-		insert(node->left, data);
+		insert(node->left, data,node);
 	}
 	else if (data > node->data)
 	{
-		insert(node->right, data);
+		insert(node->right, data, node);
 	}
 	else {
 		//处理相同值的情况
@@ -121,7 +121,7 @@ void SearchTree::back(PNODE& node,int& max)
 // 插入接口
 void SearchTree::Insert(int data)
 {
-	insert(m_root, data);
+	insert(m_root, data, m_root);
 }
 
 // 接口: 从树中删除元素

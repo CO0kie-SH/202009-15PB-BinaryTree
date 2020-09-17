@@ -25,10 +25,6 @@ private:
 	// 从二叉树内删除元素
 	void erase(PNODE& node, T data);
 	void print(PNODE& node, int w, char c);
-
-	// 查找指定树的最小节点
-	//int min(PNODE& node);
-
 	// 查找指定树的最大节点
 	int max(PNODE& node);
 	void front(PNODE& node);	//前序遍历，根左右

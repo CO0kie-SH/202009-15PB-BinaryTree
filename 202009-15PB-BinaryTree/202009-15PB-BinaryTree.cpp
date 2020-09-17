@@ -43,10 +43,39 @@ void 二叉查找树模板()
     tree.Back();	//后序遍历，左右根
 
 }
+void T16()
+{
+    SearchTree tree;
+    tree.Insert(34);
+    tree.Insert(76);
+    tree.Insert(45);
+    tree.Insert(18);
+    tree.Insert(26);
+    tree.Insert(54);
+    tree.Insert(92);
+    tree.PrintByDeep();
+}
 
+void T17()
+{
+    SearchTree tree;
+    tree.Insert(54);
+    tree.Insert(28);
+    tree.Insert(16);
+    tree.Insert(34);
+    tree.Insert(73);
+    tree.Insert(62);
+    tree.Insert(95);
+    tree.Insert(60);
+    tree.Insert(26);
+    tree.Insert(43);
+    tree.PrintByDeep();
+}
 int main()
 {
     std::cout << "Hello World!\n";
     二叉查找树();
     二叉查找树模板();
+    T16();
+    T17();
 }
